@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lux-language"
+version = "0.1.0"
+description = "The Lux programming language and terminal assistant starter kit"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+authors = [{ name = "Lux contributors" }]
+dependencies = []
+
+[project.scripts]
+lux = "luxlang.cli:main"
+lux-assistant = "luxlang.assistant:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
